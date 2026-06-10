@@ -1,0 +1,11 @@
+artifacts/candidate_embeddings.npy
+artifacts/candidate_features.json
+artifacts/candidate_ids.json
+artifacts/candidate_slim.json
+data/candidates.jsonl
+data/candidates.jsonl.gz
+__pycache__/
+*.pyc
+.DS_Store
+*.egg-info/
+.venv/

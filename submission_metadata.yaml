@@ -1,0 +1,37 @@
+team_name: "solo-ranker"
+
+primary_contact:
+  name: "Gourab"
+  email: "sgourab66@gmail.com"
+  phone: "+91-6296012896"
+
+team_members:
+  - name: "Gourab"
+    email: "sgourab66@gmail.com"
+    role: "Solo Participant"
+
+github_repo: "https://github.com/YOUR_USERNAME/redrob-ranker"
+sandbox_link: "https://YOUR_STREAMLIT_OR_HF_LINK"
+
+
+methodology_summary: |
+  Three-stage hybrid ranking pipeline. Stage 1 applies hard rule-based filters
+  to eliminate non-technical roles, 100% services-career candidates, and honeypot
+  profiles (detected via career timeline inconsistency and advanced-claim vs
+  assessment-score mismatch). Stage 2 uses BGE-small-en bi-encoder to retrieve
+  top-500 candidates by career description similarity to the JD, then a
+  cross-encoder re-ranks the top-500 to top-200. Stage 3 computes a composite
+  final score from four weighted components: semantic role fit, career arc quality
+  (product company ratio, production ML evidence, pre-LLM experience, tenure
+  stability), behavioral availability (recency, notice period, recruiter response
+  rate), and location fit. A behavioral multiplier applied multiplicatively ensures
+  inactive or unresponsive candidates cannot appear in the top-10 regardless of
+  skill match. All embeddings are precomputed offline; ranking runs in under 3
+  minutes on CPU.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
