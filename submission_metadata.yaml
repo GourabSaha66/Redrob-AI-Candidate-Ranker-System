@@ -10,8 +10,8 @@ team_members:
     email: "sgourab66@gmail.com"
     role: "Solo Participant"
 
-github_repo: "https://github.com/YOUR_USERNAME/redrob-ranker"
-sandbox_link: "https://YOUR_STREAMLIT_OR_HF_LINK"
+github_repo: "https://github.com/GourabSaha66/Redrob-AI-Candidate-Ranker-System"
+sandbox_link: "https://redrob-ai-candidate-ranker-system.streamlit.app/"
 
 
 methodology_summary: |
